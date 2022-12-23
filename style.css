@@ -78,6 +78,12 @@ article {
     border-radius: 20px;
     text-align: center;
     font-family: "Outfit", sans-serif;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
 }
 
 .card_img {
