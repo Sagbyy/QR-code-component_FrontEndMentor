@@ -1,0 +1,115 @@
+/*----------- Font -------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+
+/*----------- Reset -------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+/*----------- Color -------------*/
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+/*----------- Page -------------*/
+
+body {
+    height: 100vh;
+    background: var(--Light-gray);
+    font-size: 12px;
+}
+
+article, main {
+    height: 100%;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*----------- Card -------------*/
+
+.card {
+    background: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    max-width: 290px;
+    max-height: 600px;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+}
+
+.card_img {
+    border-radius: 20px;
+}
+
+.card_title {
+    font-weight: 700;
+    font-size: 1.9em;
+    margin: 25px auto;
+    width: 90%;
+    color: var(--Dark-blue);
+}
+
+.card_text {
+    font-size: 1.35em;
+    font-weight: 400;
+    color: var(--Grayish-blue);
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+
+/*----------- Footer -------------*/
+
+footer {
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    padding: 10px auto;
+    height: 30px;
+}
+
+footer a {
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
